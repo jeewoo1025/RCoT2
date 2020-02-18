@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:background="@color/paradiseGreen"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/white"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_above="@+id/loginLayout"
+        android:layout_marginBottom="60dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="casual"
+            android:layout_marginRight="5dp"
+            android:text="RCoT"
+            android:textAlignment="textEnd"
+            android:textColor="@android:color/white"
+            android:textSize="30dp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:text="Login"
+            android:textAlignment="viewStart"
+            android:textColor="@android:color/white"
+            android:textSize="40dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/login"
+        android:orientation="vertical"
+        android:id="@+id/loginLayout"
+        android:padding="30dp">
+
+        <EditText
+            android:id="@+id/devicename"
+            android:layout_width="250dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hint="Device Name"
+            android:paddingRight="10dp"
+            android:drawableRight="@drawable/icon_device"
+            android:textColor="@android:color/darker_gray"
+            android:textColorHint="@android:color/darker_gray"/>
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <EditText
+                    android:id="@+id/ipAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="40dp"
+                    android:textColor="@android:color/darker_gray"
+                    android:hint="Server IP Address"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:inputType="textPassword"/>
+                <Button
+                    android:id="@+id/eyeButton"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/icon_eye"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="220dp"
+            android:layout_height="0dp"
+            android:onClick="loginClicked"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/green"
+            android:layout_weight="1"
+            android:text="login"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginLayout"
+        android:layout_centerHorizontal="true"
+        android:text="Forgot Server IP?" />
+
+</RelativeLayout>
