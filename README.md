@@ -2,7 +2,6 @@
 Remote Control of Things ver2
 
 * 개발기간 : 2019.8.1 ~ 2020.2.2
-* 개인 프로젝트
 
 RCoT(Remote Control of Things)는 리모컨을 대신해서 TV, 셋톱박스, 오디오 등
 을 조작하는 앱을 만드는 프로젝트입니다. 원하는 리모컨을 RCoT 앱에 등록해주면, 
